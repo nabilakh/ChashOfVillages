@@ -6,7 +6,7 @@ const Barrack = require("../models/Barrack");
  
 
 const connectDB = () => {  
-const pathURL = 'mongodb://localhost/clashOfVillages';
+const pathURL = 'mongodb+srv://dbApp:admin@cluster0.udo9o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const connectionOption = {
   useNewUrlParser: true, 
   useUnifiedTopology: true, 
