@@ -3,10 +3,10 @@ const cron = require("node-cron");
 const Market = require("../models/Market");
 const Farm = require("../models/Farm");
 const Barrack = require("../models/Barrack");
- 
+require ("dotenv").config()
 
 const connectDB = () => {  
-const pathURL = 'mongodb+srv://dbApp:admin@cluster0.udo9o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const pathURL = 'process.env.MongoDB_URL';
 const connectionOption = {
   useNewUrlParser: true, 
   useUnifiedTopology: true, 
